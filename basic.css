@@ -1,0 +1,179 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.element {
+    width: 100%;
+    /* Set the desired aspect ratio (e.g., 16:9) */
+    padding-top: 56.25%; /* 9 / 16 * 100 = 56.25% */
+    position: relative;
+    background-color: #ddd; /* Add background color for visibility */
+    margin-bottom: 0px; /* Add some spacing between elements */
+}
+
+#element3 { background-color: #9999ff; }
+#element4 { background-color: #ffff99; }
+#element5 { background-color: #9999ff; }
+#element1{
+    background-image: url('rpzlogos.png'); /* Replace with your image URL */
+    background-size: cover; /* Cover the container completely */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; 
+}
+.navbar {
+    background-color: transparent;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 0.5s ease;
+    overflow: hidden;
+    font-family: 'Comfortaa';
+    font-size: 20px;
+   
+    
+}
+#element1{
+    padding-top: 56.25%;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin: 0 10px;
+    color: rgb(127, 198, 198);
+}
+.navbar .brand-logo {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: teal;
+}
+#element2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 0px;
+    background-color: rgb(32, 28, 28);
+
+}
+.column {
+    width: 48%; /* Adjust the width as needed, considering some space for margins */
+    box-sizing: border-box;
+    margin-left: 10px;
+    justify-content: center;
+    text-align: center;
+}
+.column:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+}
+.column:nth-child(2) > div {
+    width: 48%; /* Adjust the width as needed */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .column {
+        width: 50%; /* Full width on smaller screens */
+    }
+    .service2{
+        position: relative;
+        height: 100px;
+        width: 100px;
+        
+    }
+    .service1{
+        position: relative;
+        height: 100px;
+        width: 100px;
+        right: 25px;
+    }
+    .service3{
+        position: relative;
+        height: 100px;
+        width: 100px;
+        
+    }
+    .service{
+        position: relative;
+        height: 500px;
+        width: 500px;
+    }
+    .column:nth-child(2) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .column:nth-child(2) > div {
+        width: 38%; /* Adjust the width as needed */
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+}
+.service2{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    
+}
+.service1{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    right: 25px;
+}
+.service3{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    
+}
+.service{
+    position: relative;
+    top: 150px;
+}
+#element3{
+    padding-top: 0px;
+    justify-content: center;
+    background-color: #05abc4;
+}
+.team{
+    height: 600px;
+ 
+    max-width: 50%; /* Make the image responsive to the container's width */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: block; /* Remove extra spacing below the image */
+    margin: 10px auto; 
+}
+#element4{
+    padding-top: 0px;
+    text-align: center;
+    background-color: rgb(32, 28, 28);
+
+}
+.project{
+    max-width: 70%;
+    margin: 10px;
+ 
+}
+#element5{
+    padding-top: 0px;
+    text-align: center;
+    max-width: 100%;
+    background-color: #d9d9d9;
+}
+.linkedin{
+    width: 600px;
+}

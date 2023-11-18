@@ -1,0 +1,24 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+}
+
+.container {
+    width: 100%; /* Optional: Set a specific width for the container if needed */
+}
+
+.column {
+    width: 50%; /* Each column takes 50% of the container width */
+    float: left; /* Float the columns to make them appear side by side */
+    box-sizing: border-box; /* Include padding and border in the column's total width */
+}
+.image1{
+    max-width: 100%;
+}
+.image2{
+    max-width: 100%;
+    position: relative;
+    padding-bottom: 1.75px;
+}

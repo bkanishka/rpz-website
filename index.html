@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Rpz Enterprises
+        </title>
+        <!-- <link href="basic.css" rel="stylesheet"> -->
+        <link rel="type/javascript" href="index.js">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@500&family=Lora&family=Montserrat:wght@500&family=Poppins&display=swap" rel="stylesheet">
+        <style>
+            body, html {
+                height: 100%;
+                margin: 0;
+            }
+            
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .element {
+                width: 100%;
+                /* Set the desired aspect ratio (e.g., 16:9) */
+                padding-top: 56.25%; /* 9 / 16 * 100 = 56.25% */
+                position: relative;
+                background-color: #ddd; /* Add background color for visibility */
+                margin-bottom: 0px; /* Add some spacing between elements */
+            }
+            
+            #element3 { background-color: #9999ff; }
+            #element4 { background-color: #ffff99; }
+            #element5 { background-color: #9999ff; }
+            #element1{
+                background-image: url('rpzlogos.png'); /* Replace with your image URL */
+                background-size: cover; /* Cover the container completely */
+                background-position: center; /* Center the background image */
+                background-repeat: no-repeat; 
+            }
+            .navbar {
+                background-color: transparent;
+                padding: 15px;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                z-index: 1000;
+                display: flex;
+                justify-content: space-between;
+                transition: background-color 0.5s ease;
+                overflow: hidden;
+                font-family: 'Comfortaa';
+                font-size: 20px;
+               
+                
+            }
+            #element1{
+                padding-top: 56.25%;
+            }
+            
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                padding: 15px;
+                margin: 0 10px;
+                color: rgb(127, 198, 198);
+            }
+            .navbar .brand-logo {
+                color: white;
+                text-decoration: none;
+                font-size: 24px;
+                font-weight: bold;
+                color: teal;
+            }
+            #element2 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding-top: 0px;
+                background-color: rgb(32, 28, 28);
+            
+            }
+            .column {
+                width: 48%; /* Adjust the width as needed, considering some space for margins */
+                box-sizing: border-box;
+                margin-left: 10px;
+                justify-content: center;
+                text-align: center;
+            }
+            .column:nth-child(2) {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .column:nth-child(2) > div {
+                width: 48%; /* Adjust the width as needed */
+                box-sizing: border-box;
+                margin-bottom: 20px;
+            }
+            
+            @media (max-width: 768px) {
+                .column {
+                    width: 50%; /* Full width on smaller screens */
+                }
+                .service2{
+                    position: relative;
+                    height: 100px;
+                    width: 100px;
+                    
+                }
+                .service1{
+                    position: relative;
+                    height: 100px;
+                    width: 100px;
+                    right: 25px;
+                }
+                .service3{
+                    position: relative;
+                    height: 100px;
+                    width: 100px;
+                    
+                }
+                .service{
+                    position: relative;
+                    height: 500px;
+                    width: 500px;
+                }
+                .column:nth-child(2) {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .column:nth-child(2) > div {
+                    width: 38%; /* Adjust the width as needed */
+                    box-sizing: border-box;
+                    margin-bottom: 20px;
+                }
+            }
+            .service2{
+                position: relative;
+                height: 300px;
+                width: 300px;
+                
+            }
+            .service1{
+                position: relative;
+                height: 300px;
+                width: 300px;
+                right: 25px;
+            }
+            .service3{
+                position: relative;
+                height: 300px;
+                width: 300px;
+                
+            }
+            .service{
+                position: relative;
+                top: 150px;
+            }
+            #element3{
+                padding-top: 0px;
+                justify-content: center;
+                background-color: #05abc4;
+            }
+            .team{
+                height: 600px;
+             
+                max-width: 50%; /* Make the image responsive to the container's width */
+                height: auto; /* Maintain the image's aspect ratio */
+                display: block; /* Remove extra spacing below the image */
+                margin: 10px auto; 
+            }
+            #element4{
+                padding-top: 0px;
+                text-align: center;
+                background-color: rgb(32, 28, 28);
+            
+            }
+            .project{
+                max-width: 70%;
+                margin: 10px;
+             
+            }
+            #element5{
+                padding-top: 0px;
+                text-align: center;
+                max-width: 100%;
+                background-color: #d9d9d9;
+            }
+            .linkedin{
+                width: 600px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar" id="navbar">
+                <a href="#" class="brand-logo">RPZ Enterprises</a>
+                <!-- Navbar sections -->
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+    
+            <div class="element" id="element1">
+            </div>
+            <div class="element" id="element2">
+                <div class="column">
+                    <img src="circle.png" class="service">
+                </div>
+                
+                <div class="column">
+                    <div>
+                        <img src="service3.png" class="service1">
+                    </div>
+                            
+                    <div>
+                        <img src="service4.png" class="service2">
+                    </div>
+                            
+                    <div>
+                        <img src="service5.png" class="service3">
+                    </div>
+                            
+                </div>
+            </div>
+            <div class="element" id="element3">
+                <a href="teams.html"><img src="team.png" class="team"></a>
+                
+            </div>
+            <div class="element" id="element4">
+                <img src="project.jpg" class="project">
+            </div>
+            <div class="element" id="element5">
+               <img class="linkedin" src="linkedin.png" >
+            </div>
+        </div>
+        <link rel="type/javascript" href="index.js">
+        <script>
+            document.addEventListener("scroll", function () {
+                var navbar = document.getElementById("navbar");
+            
+                if (window.scrollY > 50) {
+                    navbar.style.backgroundColor = "rgba(0, 0, 0, 0.9)"; // Change to the solid color you want
+                } else {
+                    navbar.style.backgroundColor = "transparent";
+                }
+            });
+        </script>
+    </body>
+
+</html>
